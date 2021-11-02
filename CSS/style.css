@@ -17,5 +17,9 @@
 .icon_style{
     font-size: 30px;
     width: 50px;
-    color: rgb(75, 75, 75);
+    color: rgb(85, 85, 85);
+    text-align: center;
+}
+.my_padding{
+    padding: 20px;
 }

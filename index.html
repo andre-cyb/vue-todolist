@@ -34,13 +34,16 @@
             </div>
 
 
-            <!-- contenitore singola todo -->
+            <!-- contenitore singola Task -->
             <div class="contenitore_todo col-7 ">
                 <div class="card position-relative flex-row" v-for="task, index in toDoList">
-                    <div class="card-body"> {{ task }}</div>
-                    <div class="d-flex align-items-center justify-content-center">
+                    <!-- nome Task -->
+                    <div class="card-body my_padding"> {{ task }}</div>
+                    <!-- icona X -->
+                    <div class="d-flex align-items-center justify-content-center" style="width: 70px;">
                         <i class="fas fa-times icon_style"></i>
                     </div>
+                    <!-- colore bordo task -->
                     <div class="task_color"></div>
                 </div>
             </div>
