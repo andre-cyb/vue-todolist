@@ -8,7 +8,6 @@ new Vue({
     },
     methods: {
         addTaskToDo() {
-
             let newTask = this.task;
             this.toDoList.push(newTask);
             this.task = "";
@@ -16,5 +15,8 @@ new Vue({
         onClickRemoveTask(indexOfTask) {
             this.toDoList.splice(indexOfTask, 1);
         }
+    },
+    mounted: {
+
     }
 });

@@ -26,8 +26,8 @@
             <!-- contenitore input todo -->
             <div class="col-7 mb-5">
                 <div class="input-group mb-3 ">
-                    <input type="text" class="form-control" v-model="task" placeholder="Oggi devo..."
-                        aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <input id="addTask" type="text" class="form-control" v-model="task" placeholder="Oggi devo..."
+                        aria-label="Recipient's username" aria-describedby="button-addon2" v-on:keyup.13="addTaskToDo">
                     <button class="btn btn-outline-primary" @click="addTaskToDo" type="button"
                         id="button-addon2">Aggiungi</button>
                 </div>
