@@ -14,10 +14,33 @@
 
 <body>
 
-    <heder></heder>
+    <heder>
+        <h1 class="pb-5 pt-3 title">Hello Vueoolean - Todolist</h1>
+
+    </heder>
 
     <main id="app">
-        <h1>{{ element }}</h1>
+        <div class=" container row flex-column align-items-center m-auto">
+
+            <!-- contenitore input todo -->
+            <div class="col-7 mb-5">
+                <div class="input-group mb-3 ">
+                    <input type="text" class="form-control" placeholder="Recipient's username"
+                        aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+                </div>
+            </div>
+
+
+            <!-- contenitore singola todo -->
+            <div class="contenitore_todo col-7 ">
+                <div class="card position-relative">
+                    <div class="card-body"> This is some text within a card body.</div>
+                    <div class="task_color"></div>
+
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer></footer>
