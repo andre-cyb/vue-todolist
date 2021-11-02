@@ -28,7 +28,7 @@
                 <div class="input-group mb-3 ">
                     <input type="text" class="form-control" v-model="task" placeholder="Oggi devo..."
                         aria-label="Recipient's username" aria-describedby="button-addon2">
-                    <button class="btn btn-outline-secondary" @click="addTaskToDo" type="button"
+                    <button class="btn btn-outline-primary" @click="addTaskToDo" type="button"
                         id="button-addon2">Aggiungi</button>
                 </div>
             </div>
@@ -38,9 +38,10 @@
             <div class="contenitore_todo col-7 ">
                 <div class="card position-relative flex-row" v-for="task, index in toDoList">
                     <!-- nome Task -->
-                    <div class="card-body my_padding"> {{ task }}</div>
+                    <div class="card-body my_text_style"> {{ task }}</div>
                     <!-- icona X -->
-                    <div class="d-flex align-items-center justify-content-center" style="width: 70px;">
+                    <div class="d-flex align-items-center justify-content-center" @click="onClickRemoveTask(index)"
+                        style="width: 70px;">
                         <i class="fas fa-times icon_style"></i>
                     </div>
                     <!-- colore bordo task -->

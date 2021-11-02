@@ -20,6 +20,11 @@
     color: rgb(85, 85, 85);
     text-align: center;
 }
-.my_padding{
-    padding: 20px;
+.my_text_style{
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 30px;
+}
+input{
+    height: 50px;
 }
