@@ -12,7 +12,7 @@
     top: 0;
     left: 0;
     background-color: rgb(223, 0, 0);
-    
+    border-radius: 0.25rem 0rem 0rem 0.25rem;
 }
 .icon_style{
     font-size: 30px;
@@ -27,4 +27,13 @@
 }
 input{
     height: 50px;
+}
+.my_input_style{
+    width: 70%!important
+}
+.my_inputColor_style{
+    width: 30px;
+}
+.input-group button{
+    width: 20%;
 }
